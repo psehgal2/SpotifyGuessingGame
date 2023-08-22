@@ -1,0 +1,81 @@
+<!-- Name: Purvi Sehgal
+Date: 06/26/2023
+
+This is the HTML file for the Spotify game which
+allows users to guess the top 10 tracks of any artist 
+on Spotify -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spotify!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="helpers.js"></script>
+    <script defer src="spotify.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Spotify Game!</h1>
+      <p id="message-area" class="hidden"></p>
+    </header>
+
+    <main>
+
+      <section id="search-view" >
+        <h2>Choose an artist</h2>
+        <p>Pick an artist you've been keeping up with on Spotify </p>
+        <input type="text" placeholder="Search..." />
+        <div id="search-results">
+          <!-- To be populated -->
+        </div>
+      </section>
+
+
+      <section id="play-view" class="hidden">
+        <h2>Now order it!</h2>
+        <p>Try to sort the top ten tracks from most popular to least popular. Good luck!</p>
+
+        <div id="track-container">
+          <!-- To be populated -->
+        </div>
+
+        <button id="play-view-done">Done</button>
+      </section>
+
+      <section id="results-view" class="hidden">
+       <h2>Your score</h2>
+       <p></p>
+
+       <div>
+        <article>
+          <h3>Your ordering</h3>
+          <ol id="your-ordering">
+            <!-- To be populated -->
+          </ol>
+        </article>
+        <article>
+          <h3>Actual ordering</h3>
+          <ol id="actual-ordering">
+            <!-- To be populated -->
+          </ol>
+        </article>
+       </div>
+       <button id="results-view-done">Play again!</button>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Data from 
+        <a href="https://developer.spotify.com/documentation/web-api/reference/#/" target="_blank">Spotify</a>
+      </p>
+    </footer>
+  </body>
+</html>

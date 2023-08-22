@@ -1,0 +1,165 @@
+/*
+ * CSS file
+ */
+
+body, main, header, section, div, article, #search-results {
+  display: flex
+}
+
+footer {
+  font-style: italic;
+  line-height: 50px;
+  text-align: center;
+}
+
+#track-container {
+  display: block;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+  height: 100vh;
+}
+
+h1, h2, #results-view p, button {
+  font-family: 'Koulen', cursive;
+}
+
+button, #search-results article {
+  background-color: #E2DADA;
+  color: #231c35;
+}
+
+body, button:hover, article {
+  background-color: #231c35;
+  color: #E2DADA;
+}
+
+section {
+  background-color: #484564;
+}
+
+footer a, footer a:visited {
+  color: white;
+}
+
+h1, h2, p, #search-results h3  {
+  margin: 0;
+}
+
+input, section, #search-results article, #results-view article, 
+  #track-container {
+  padding: 10px;
+}
+
+button, input, section, article {
+  border-radius: 10px;
+}
+
+h3 {
+  width: auto;
+}
+
+p, input, #play-view article, #results-view > div {
+  margin-bottom: 10px;
+}
+
+#results-view p  {
+  font-size: 20pt;
+  margin-bottom: 0;
+}
+
+main, header, #search-results {
+  justify-content: center;
+}
+
+header, section, #track-container div {
+  align-items: center;
+}
+
+body, header, section, #search-results article, #results-view article {
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+input {
+  width: 100%;
+  max-width: 500px;
+  border-width: 0;
+}
+
+section {
+  width: 90%;
+  max-width: 1020px;
+  box-shadow: 0 0 0.5em #484564;
+  padding-bottom: 20px;
+}
+
+#search-results {
+  flex-wrap: wrap;
+}
+
+#search-results article {
+  width: 120px;
+  margin: 5px;
+  justify-content: space-between;
+}
+
+article {
+  box-shadow: 0 0 0.3em #E2DADA;
+  font-size: 10pt;
+}
+
+#results-view article, p {
+  list-style-position: inside;
+}
+
+#search-results article:hover {
+  transform: scale(1.1);
+  transition: 0.1s ease;
+}
+
+#search-results article:active {
+  background-color: white;
+}
+
+#search-results img {
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#track-container button {
+  margin-left: 10px;
+}
+
+#play-view article {
+  justify-content: space-between;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#results-view article {
+  margin: 10px;
+}
+
+button {
+  font-size: 12pt;
+  border: 0.2em solid #E2DADA;
+  transition: all 0.2s;
+}
+
+button:hover {
+  box-shadow: inset #E2DADA 0 0 0.06em 0;
+}
+
+ol {
+  padding-left: 0;
+}
+
+.hidden {
+  display: none;
+}
